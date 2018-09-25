@@ -1,5 +1,8 @@
 #pragma rtGlobals=3		// Use modern global access method and strict wave access.
-//This procedure is built for...
+//This procedure is built for universal use of Igor.
+
+//----------Part 1 Transpose----------
+//1.1 transpose3Dxy
 function transpose3Dxy(w)
 //Transpose the x & y values of a 3D wave
     wave w
@@ -14,9 +17,9 @@ function transpose3Dxy(w)
     duplicate/o wt,$nameofwave(w)
     killwaves wt
 end
-
+//1.2 transpose3Dxz
 function transpose3Dxz(w)
-//Transpose the x & z values of a 3D wave
+//Transpose the x & z values of a 3D wave, especially used in ARPES Helium thetamap
     wave w
     variable nx=dimsize(w,0)
     variable ny=dimsize(w,1)
