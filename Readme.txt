@@ -7,6 +7,7 @@ Repository Log:
   2018.09.21  create ZSH_Raman.ipf for Ramna Mapping.
   2018.09.21  create normalize.ipf for ARPES normalization of data.
   2018.09.24  add 'transpose3Dxz' to Univ.ipf for ARPES data.
+  2018.09.26  add 'dimright' to the Univ.ipf for any muti-dimensional waves.
 
 
 
@@ -20,6 +21,7 @@ Igor Folder Log (6.37):
       YW_ARPES.ipf  add  20180914
       ZSH_Raman.ipf  add  20180914
       Univ.ipf  add  20180925
+      Univ.ipf  Modify  20180926
 
 
   User Procedure

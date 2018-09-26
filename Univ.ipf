@@ -32,3 +32,14 @@ function transpose3Dxz(w)
     duplicate/o wt,$nameofwave(w)
     killwaves wt
 end
+
+
+//----------Part 2 Scale----------
+//2.1 dimright
+function dimright(w,d)
+    wave w
+    variable d
+    variable dm
+    dm=dimoffset(w,d)+(dimsize(w,d)-1)*dimdelta(w,d)
+    return dm
+end
