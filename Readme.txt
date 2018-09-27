@@ -22,6 +22,7 @@ Igor Folder Log (6.37):
       ZSH_Raman.ipf  add  20180914
       Univ.ipf  add  20180925
       Univ.ipf  Modify  20180926
+      bchGraphStyle.ipf(20180927 modified version)  add 20180927
 
 
   User Procedure
