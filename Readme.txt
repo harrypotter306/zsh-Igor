@@ -8,6 +8,7 @@ Repository Log:
   2018.09.21  create normalize.ipf for ARPES normalization of data.
   2018.09.24  add 'transpose3Dxz' to Univ.ipf for ARPES data.
   2018.09.26  add 'dimright' to the Univ.ipf for any muti-dimensional waves.
+  2019.01.27  create extractband.ipf for extract energy band from the result of calculation. 
 
 
 
