@@ -24,18 +24,6 @@ function normalize(w)
             endfor
         endfor
     else
-    // if(nz)
-    //     for(iy=0;iy<ny;iy+=1)
-    //         variable s=0
-    //             for(ix=0;ix<nx;ix+=1)
-    //                 s+=w[ix][iy][iz]
-    //             endfor
-    //             for(ix=0;ix<nx;ix+=1)
-    //                 w[ix][iy][iz]=w[ix][iy][iz]/s
-    //             endfor
-    //         endfor
-    //     endfor
-    // else
         for(iy=0;iy<ny;iy+=1)
             variable s2=0
             for(ix=0;ix<nx;ix+=1)
