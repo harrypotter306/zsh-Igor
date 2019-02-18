@@ -1,6 +1,8 @@
 #pragma TextEncoding = "UTF-8"
 #pragma rtGlobals=3		// Use modern global access method and strict wave access.
 //This procedure is built for universal use of Igor.
+//This file can only by modified by sh!!!
+
 
 //----------Part 1 Transpose----------
 //1.1 transpose3Dxy
