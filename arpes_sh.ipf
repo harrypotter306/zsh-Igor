@@ -1,3 +1,4 @@
+#pragma TextEncoding = "UTF-8"
 #pragma rtGlobals=3		// Use modern global access method and strict wave access.
 //This procedure is built for ARPES analysis by SH
 //Created at 20180921
@@ -45,4 +46,24 @@ function normalize(w)
             endfor
         endfor
     endif
+end
+
+
+
+function Angle2KCut(w,Ef,t0)
+// transform angle cut to k cut
+//w: x tilt; y Kinetic Energy
+//Ef: Fermi Energy
+//t0: value of centre of tilt
+	wave w
+	variable Ef
+	variable t0
+	variable tml=dimoffset(w,0)
+	variable tmr=dimright(w,0)
+	variable Em=dimright(w,1)
+	duplicate/o w,$(nameofwave(w)+"k")    //creat a wave appending "k"
+	wave wave2=$(nameofwave(w)+"k")
+	setscale x,0.512*sqrt(Em)*sin((tml-t0)/180*pi),0.512*sqrt(Ef)*sin((tmr-t0)/180*pi),wave2   //the maximum k range of wave2
+	wave2=Interp2D(w,asin(x/0.512/sqrt(y))/pi*180+t0,y)
+	setscale/p y,dimoffset(w,1)-Ef,dimdelta(w,1),wave2
 end
